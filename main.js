@@ -112,9 +112,48 @@ function emptyFields(){
       */
     
 
-let colors = ['blue', 'red' , 'green' , 'orange' , 'violet' , 'brown','yellow'] ;
+let colors = [
+    'blue',
+    'red' ,
+    'green' ,
+    'orange' ,
+    'violet' ,
+    'brown',
+    'yellow'] ;
 let userColors = [];
 let computerColors = [] ; 
+
+function addColor(color){
+    if(userColors.length < 4){
+        userColors.push(color)
+    }
+    console.log('proposition : ', userColors);
+    
+}
+
+circleRed
+  document.getElementById("circleRed").addEventListener('click', () => {
+      addColor(colors[1])
+  })
+  document.getElementById("circleBrown").addEventListener('click', () => {
+      addColor(colors[5])
+  })
+  document.getElementById("circleBlue").addEventListener('click', () => {
+      addColor(colors[0])
+  })
+  document.getElementById("circleGreen").addEventListener('click', () => {
+      addColor(colors[2])
+  })
+  document.getElementById("circleYellow").addEventListener('click', () => {
+      addColor(colors[6])
+  })
+  document.getElementById("circleViolet").addEventListener('click', () => {
+      addColor(colors[4])
+  })
+  document.getElementById("circleOrange").addEventListener('click', () => {
+      addColor(colors[3])
+  })
+
 
 function chooseColor(){
     
@@ -234,7 +273,7 @@ function chooseColor(){
             else if (blanche == 1){
                 document.getElementById("firstCircle").style.background="red";
         }
-        }
+    }
                
                 
             

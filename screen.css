@@ -1,0 +1,176 @@
+
+
+body {
+    height: 100vh;
+    margin: 10px;
+    padding: 1rem;
+    display: grid;
+    background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); 
+    
+    font-family: system-ui;
+  }
+  h1 {
+    background: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  span {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: monospace;
+  }
+  #firstCircle{
+    position:relative;
+    left:700px;
+    top:2px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color:grey;
+  }
+  #secondCircle {
+    position:relative;
+    left:700px;
+    top:10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background:grey;
+  }
+  #thirdCircle{
+    position:relative;
+    left:740px;
+    top:-40px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background:grey;
+  }
+  #fourthCircle {
+    position:relative;
+    left:740px;
+    top:-32px;
+    width: 35px;
+    height: 35px;  
+    border-radius: 25px;
+    background:grey;
+  }
+ 
+  #circleRed{
+    position: relative;
+    left: 500px;
+    top: 120px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: red;
+  }
+
+  #circleBrown{
+    position: relative;
+    left: 460px;
+    top: 85px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: brown;
+  }
+  #circleBlue{
+    position: relative;
+    left: 420px;
+    top: 50px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: blue;
+  }
+  #circleGreen{
+    position: relative;
+    left: 380px;
+    top: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: green;
+  }
+  #circleYellow{
+    position: relative;
+    left: 480px;
+    top: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: yellow;
+  }
+  #circleViolet{
+    position: relative;
+    left: 440px;
+    top: -20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: violet;
+  }
+  #circleOrange{
+    position: relative;
+    left: 400px;
+    top: -55px;
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: orange;
+  }
+  h1.glow{
+    background: transparent;
+  }
+    .glow{
+      font-family: Sans-serif;
+      font-size: 3rem;
+      
+      color: white;
+      padding: 20px;
+      text-shadow:
+                  1px 1px 0px gold,
+                  -3px -0 25px red,
+                  3px 0px 3px white,
+                  0px 0px 15px white,
+                  15px 10px 10px black,
+                  0 0 40px orangered,
+                  0 0 40px orangered,
+                  0 0 60px orangered,
+                  0 0 80px orangered,
+                  0 0 80px orangered,
+                  0 0 100px orangered,
+                  0 0 150px orangered;
+       }
+       .socket {
+        display: inline-block;
+        border-radius: 50%;
+        background-color: white;
+      }
+      
+      #guesses {
+        display: inline-block;
+        background: -moz-linear-gradient(top, rgba(240,183,161,1) 0%, rgba(140,51,16,1) 50%, rgba(117,34,1,1) 51%, rgba(191,110,78,1) 75%);
+        border-radius: 30px 30px 30px 30px;
+        padding: 17px ;
+        font-size: 0;
+      }
+      
+      .guess { margin-top: 15px; }
+      
+      
+      .guess .socket {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+      }
+      
+      
+      .guess , .socket { margin-left: 10px; }
+      #result{
+        
+        background: -moz-linear-gradient(top, rgba(240,183,161,1) 0%, rgba(140,51,16,1) 50%, rgba(117,34,1,1) 51%, rgba(191,110,78,1) 75%);
+      }

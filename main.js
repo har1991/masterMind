@@ -152,7 +152,7 @@ function chooseColor() {
     let randomColor4 = "";
     let filteredColors = [];
 
-    for (let couleurTrouvées = 0; couleurTrouvées < 4; couleurTrouvées++) {
+    // for (let couleurTrouvées = 0; couleurTrouvées < 4; couleurTrouvées++) {
     //     let alreadyChoose = true;
     //     let randomColor = null;
     //     while (alreadyChoose) {

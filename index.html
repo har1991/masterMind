@@ -74,91 +74,87 @@
 </form>
 
 --> 
-<h1 class="glow">Master Mind</h1>
-
+<header>
+  <h1 class="glow">Master Mind</h1>
+</header>
 <div class="container">
-  <div id="guesses">
+  
+    <div id="guesses">
+      
+      <div class="guess">
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+      </div>
+      <div class="guess">
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+      </div>
+      <div class="guess">
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+      </div>
+      <div class="guess">
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+      </div>
+      <div class="guess">
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+      </div>
+      <div class="guess">
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+      </div>
+      <div class="guess">
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+      </div>
+      <div class="guess">
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+        <div class="socket"></div>
+      </div>
     
-    <div class="guess">
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-    </div>
-    <div class="guess">
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-    </div>
-    <div class="guess">
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-    </div>
-    <div class="guess">
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-    </div>
-    <div class="guess">
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-    </div>
-    <div class="guess">
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-    </div>
-    <div class="guess">
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-    </div>
-    <div class="guess">
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-      <div class="socket"></div>
-    </div>
   </div>
+        <div class="result">
+          <div id="firstCircle"></div>
+          <div id="secondCircle"></div>
+          <div id="thirdCircle"></div>
+          <div id="fourthCircle"></div>
+        </div>
+        <div class="input">
+          <button id="circleRed"></button >
+          <button id="circleBrown"></button >
+          <button id="circleBlue"></button >
+          <button id="circleGreen"></button >
+          <button id="circleYellow"></button >
+          <button id="circleViolet"></button>
+          <button id="circleOrange"></button>
+        </div>
+        <button class="genNew" onclick="chooseColor()" id="genNew">New Colors</button><br>
+        <button class="compare" onclick="compare()" id="compColors">compare the Colors</button>
 
-<div id="result"></div>
-  <div id="firstCircle"></div>
-  <div id="secondCircle"></div>
-  <div id="thirdCircle"></div>
-  <div id="fourthCircle"></div>
 </div>
-<div id="input"></div>
-  <button id="circleRed"></button >
-  <button  id="circleBrown"></button >
-  <button  id="circleBlue"></button >
-  <button  id="circleGreen"></button >
-  <button  id="circleYellow"></button >
-  <button id="circleViolet"></button>
-  <button id="circleOrange"></button>
-</div>
-<h1>
-  <button onclick="chooseColor()" id="genNew">Generate New Random Color</button>
-  <span id="color"></span>
-</h1>
-<h1>
-  <button onclick="compare()" id="compColors">compare the Colors</button>
-  <span id="color"></span>
-</h1>
-<h1 >
-  <input id="firstVariable" type="text"><br>
-  <input id="secondVariable" type="text"><br>
-  <input id="thirdVariable" type="text"><br>
-  <input id="fourthVariable" type="text"><br>
 
-</h1>
+
+  
+  
+
 
     <script src="main.js"></script>
 </body>

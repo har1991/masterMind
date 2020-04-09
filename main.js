@@ -115,6 +115,35 @@ function emptyFields(){
 let colors = ['blue', 'red' , 'green' , 'orange' , 'violet' , 'brown','yellow'] ;
 let userColors = [];
 let computerColors = [] ; 
+function addColor(color) {
+    if (userColors.length < 4) {
+        userColors.push(color);
+    }
+    console.log("proposition : ", userColors);
+}
+
+document.getElementById("circleRed").addEventListener("click", () => {
+    addColor(colors[1]);
+});
+document.getElementById("circleBrown").addEventListener("click", () => {
+    addColor(colors[5]);
+});
+document.getElementById("circleBlue").addEventListener("click", () => {
+    addColor(colors[0]);
+});
+document.getElementById("circleGreen").addEventListener("click", () => {
+    addColor(colors[2]);
+});
+document.getElementById("circleYellow").addEventListener("click", () => {
+    addColor(colors[6]);
+});
+document.getElementById("circleViolet").addEventListener("click", () => {
+    addColor(colors[4]);
+});
+document.getElementById("circleOrange").addEventListener("click", () => {
+    addColor(colors[3]);
+});
+console.log("proposition : ", userColors);
 
 function chooseColor(){
     
@@ -137,7 +166,7 @@ function chooseColor(){
         computerColors.push(randomColor4);
         filteredColors = filteredColors.filter(filteredColors => !computerColors.includes(filteredColors));
         console.log(computerColors);
-       
+        userColors =[];
         }
         function compare() {
             document.getElementById("firstCircle").style.background="grey";
@@ -145,26 +174,42 @@ function chooseColor(){
             document.getElementById("thirdCircle").style.background="grey";
             document.getElementById("fourthCircle").style.background="grey";
             let noire = 0 ;
-            let blanche = 0;
-            userColors =[];
-            let firstColor= document.getElementById("firstVariable").value ;
-            let secondColor= document.getElementById("secondVariable").value ;
-            let thirdColor= document.getElementById("thirdVariable").value ;
-            let fourthColor= document.getElementById("fourthVariable").value ;
-            userColors.push(firstColor,secondColor,thirdColor,fourthColor);
-            
+            let blanche = 0;   
             for (var i = 0 ; i < userColors.length  ; i++ ){
                 if(userColors[i]== computerColors[i]){
                     noire = noire + 1 ;
+                    if (noire == 1){
+                        document.getElementById("firstCircle").style.background="black";
+                    }
+                    else if ( noire == 2){
+                        document.getElementById("secondCircle").style.background="black";
+                    }
+                    else if (noire == 3){
+                        document.getElementById("thirdCircle").style.background="black";
+                    }
+                    else if (noire == 4 ){
+                        document.getElementById("fourthCircle").style.background="black";
+                    }
                 }
                 else if (computerColors.includes(userColors[i])){
                     blanche = blanche + 1;
+                    if (blanche == 1){
+                        document.getElementById("firstCircle").style.background="red";
+                    }
+                    else if ( blanche == 2){
+                        document.getElementById("secondCircle").style.background="red";
+                    }
+                    else if (blanche == 3){
+                        document.getElementById("thirdCircle").style.background="red";
+                    }
+                    else if (blanche == 4 ){
+                        document.getElementById("fourthCircle").style.background="red";
+                    }
                 }
                 }
-                
                 console.log("black :" ,noire);
                 console.log("white :" ,blanche);
-                if (noire == 1 && blanche == 0){
+                /*if (noire == 1 && blanche == 0){
                     document.getElementById("firstCircle").style.background="rgba(24, 23, 23, 0.904)";
                 }
                 else if (noire == 1 && blanche ==1){
@@ -233,7 +278,7 @@ function chooseColor(){
             }
             else if (blanche == 1){
                 document.getElementById("firstCircle").style.background="red";
-        }
+        }*/
         }
                
                 

@@ -178,38 +178,16 @@ function chooseColor(){
             for (var i = 0 ; i < userColors.length  ; i++ ){
                 if(userColors[i]== computerColors[i]){
                     noire = noire + 1 ;
-                    if (noire == 1){
-                        document.getElementById("firstCircle").style.background="black";
-                    }
-                    else if ( noire == 2){
-                        document.getElementById("secondCircle").style.background="black";
-                    }
-                    else if (noire == 3){
-                        document.getElementById("thirdCircle").style.background="black";
-                    }
-                    else if (noire == 4 ){
-                        document.getElementById("fourthCircle").style.background="black";
-                    }
                 }
                 else if (computerColors.includes(userColors[i])){
                     blanche = blanche + 1;
-                    if (blanche == 1){
-                        document.getElementById("firstCircle").style.background="red";
-                    }
-                    else if ( blanche == 2){
-                        document.getElementById("secondCircle").style.background="red";
-                    }
-                    else if (blanche == 3){
-                        document.getElementById("thirdCircle").style.background="red";
-                    }
-                    else if (blanche == 4 ){
-                        document.getElementById("fourthCircle").style.background="red";
-                    }
+                    
                 }
                 }
+                
                 console.log("black :" ,noire);
                 console.log("white :" ,blanche);
-                /*if (noire == 1 && blanche == 0){
+                if (noire == 1 && blanche == 0){
                     document.getElementById("firstCircle").style.background="rgba(24, 23, 23, 0.904)";
                 }
                 else if (noire == 1 && blanche ==1){
@@ -278,7 +256,7 @@ function chooseColor(){
             }
             else if (blanche == 1){
                 document.getElementById("firstCircle").style.background="red";
-        }*/
+        }
         }
                
                 

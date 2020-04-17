@@ -1,116 +1,3 @@
-/*
-var x=document.getElementById("mySelect").value;
-function myFunction() {
-    var x=document.getElementById("mySelect").value=;
-  document.getElementById("values").value = x;
-}
-
-let selectItemValue = document.getElementById('itemSelect');
-
-selectItemValue.addEventListener('change', function() {
-    let selectedOption = this.options[this.selectedIndex];
-    //var handle = selectedOption.getAttribute('data-handle');
-    let ItemValue = selectedOption.label;
-    let itemText= selectedOption.value;
-    document.getElementById("demo-value").value = ItemValue;
-    document.getElementById("demo-text").value = itemText;
-});
-
-
-
-function pushLeft(){
-    let a = document.getElementById("Button1").value;
-    let b = document.getElementById("Button2").value;
-    let c = document.getElementById("Button3").value;
-    let d = document.getElementById("Button4").value;
-    let e = document.getElementById("Button5").value;
-    document.getElementById("Button1").value = b ;
-    document.getElementById("Button2").value = c ;
-    document.getElementById("Button3").value = d ;
-    document.getElementById("Button4").value = e ;
-    document.getElementById("Button5").value = a ;     
-}
-function pushRight(){
-    let a = document.getElementById("Button1").value;
-    let b = document.getElementById("Button2").value;
-    let c = document.getElementById("Button3").value;
-    let d = document.getElementById("Button4").value;
-    let e = document.getElementById("Button5").value;
-    document.getElementById("Button1").value = e ;
-    document.getElementById("Button2").value = a ;
-    document.getElementById("Button3").value = b ;
-    document.getElementById("Button4").value = c ;
-    document.getElementById("Button5").value = d ;
-    
-}
-
-let a = document.getElementById("textBox1");
-let b = document.getElementById("textBox2");
-let c = document.getElementById("textBox3");
-    document.getElementById("textBox2").disabled = true;
-    document.getElementById("textBox3").disabled = true;
-    
-
-a.onkeyup = function() {
-    if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-        document.getElementById("textBox2").disabled = false;
-        b.focus();        
-    }
-}
-b.onkeyup = function() {
-    if (this.value.length === parseInt(this.attributes["maxlength"].value)) {
-        document.getElementById("textBox3").disabled = false;
-        c.focus();
-    }
-}
-
-
-function emptyFields(){
-    
-    if (document.getElementById("checkbox").checked ==true){
-        document.forms[0].ch1.value = "";
-        
-    }else if ((document.getElementById("checkbox").checked == false)) {
-        document.forms[0].ch1.value = "0";
-        }
-    }
-    
-
-   function disappear() {
-       
-    if (document.getElementById("checkedDisapear").checked ==true){
-        document.getElementById("appaer").style.display = "none";
-    }
-    else if ((document.getElementById("checkedDisapear").checked ==false)) {
-
-        document.getElementById("appaer").style.display = "inline";
-    }
-
-   }
-  
-  document.getElementById("outside").addEventListener("click", function () {
-
-    document.getElementById("outside").style.height ="116px" ;
-    document.getElementById("outside").style.width ="241px" ;
-  
-  }, true);
-  document.getElementById("insdideP").addEventListener("click", function () {
-
-    document.getElementById("outside").style.height ="16px" ;
-    document.getElementById("outside").style.width ="141px" ;
-  
-  }, true);
-   
-    const setBg = () => {
-        const randomColor = Math.floor(Math.random()*16777215).toString(16);
-        document.body.style.backgroundColor = "#" + randomColor;
-        color.innerHTML = "#" + randomColor;
-      }
-      
-      genNew.addEventListener("click", setBg);
-      setBg()
-      */
-    
 
 let colors = ['blue', 'red' , 'green' , 'orange' , 'violet' , 'brown','yellow'] ;
 let userColors = [];
@@ -259,9 +146,12 @@ function chooseColor(){
         }
         }
                
-                
+             let colorsLevel2=['blue', 'red' , 'green' , 'orange' , 'violet' , 'brown','yellow', ];
             
             
-        
+             document.getElementById("delete").addEventListener("click", () => {
+                userColors.pop();
+                console.log(userColors);
+            });
     
 

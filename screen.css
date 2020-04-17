@@ -223,4 +223,13 @@ body {
   margin: 4px 2px;
   cursor: pointer;
  }
- 
+ .triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #555;
+  border-bottom: 25px solid transparent;
+  position :absolute ; 
+  top : 390px ; 
+  left : 775px;
+}
